@@ -3,6 +3,7 @@ import express from 'express';
 import cors from 'cors';
 import postRoutes from './routes/posts.js';
 import { connectDB, resetDB } from './db.js';
+import * as dotenv from 'dotenv'
 
 const app = express();
 
@@ -18,7 +19,7 @@ app.use("/uploads", express.static("uploads"));
 
 app.use('/resetData', function(req, res, next){ resetDB(), res.json({success: true})});
 
-
+dotenv.config({ path: "./env/config.env" })
 const PORT = process.env.PORT|| 5000;
 
 connectDB();  
