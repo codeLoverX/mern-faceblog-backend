@@ -50,6 +50,7 @@ export const createPost = async (req, res) => {
         }
     }
     const newPostMessage = new PostMessage({ audio, message, selectedFile, video })
+    await newPostMessage.save();
     res.json(newPostMessage);
 
 }
