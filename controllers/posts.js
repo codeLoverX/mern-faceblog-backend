@@ -29,7 +29,7 @@ export const getPost = async (req, res) => {
 }
 
 export const createPost = async (req, res) => {
-    let audio, selectedFile, video = "";
+    let audio="", selectedFile="", video = "";
     let { message } = req.body;
     console.log({files: req.files})
     for (let value of req.files){
