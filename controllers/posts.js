@@ -2,6 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 
 import PostMessage from '../models/postMessage.js';
+let baseURL = process.env.DEVELOPMENT==="true"? `${process.env.BASE_URL}${process.env.PORT}`: `${process.env.BASE_PRODUCTION_URL}`
 
 const router = express.Router();
 
@@ -35,15 +36,15 @@ export const createPost = async (req, res) => {
         console.log({field: value.fieldname})
         switch(value.fieldname){
             case 'selectedFile': {
-                selectedFile= `${process.env.BASE_URL}${process.env.PORT}/uploads/${value.filename}`;                
+                selectedFile= `${baseURL}/uploads/${value.filename}`;                
                 break;
             }
             case 'audio': {
-                audio= `${process.env.BASE_URL}${process.env.PORT}/uploads/${value.filename}`;                
+                audio= `${baseURL}/uploads/${value.filename}`;                
                 break;
             }
             case 'video': {
-                video= `${process.env.BASE_URL}${process.env.PORT}/uploads/${value.filename}`;                
+                video= `${baseURL}/uploads/${value.filename}`;                
                 break;
             }
         }
@@ -59,15 +60,15 @@ export const updatePost = async (req, res) => {
     for (let value of req.files){
         switch(value.fieldname){
             case 'selectedFile': {
-                selectedFile= `${process.env.BASE_URL}${process.env.PORT}/uploads/${value.filename}`;                
+                selectedFile= `${baseURL}/uploads/${value.filename}`;                
                 break;
             }
             case 'audio': {
-                audio= `${process.env.BASE_URL}${process.env.PORT}/uploads/${value.filename}`;                
+                audio= `${baseURL}/uploads/${value.filename}`;                
                 break;
             }
             case 'video': {
-                video= `${process.env.BASE_URL}${process.env.PORT}/uploads/${value.filename}`;                
+                video= `${baseURL}/uploads/${value.filename}`;                
                 break;
             }
         }
