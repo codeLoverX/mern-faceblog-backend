@@ -22,11 +22,13 @@ export const connectDB = () => {
   }
 }
 
+let baseURL = process.env.DEVELOPMENT==="true"? `${process.env.BASE_URL}${process.env.PORT}`: `${process.env.BASE_PRODUCTION_URL}`
+
 let posts = [{
   audio: "",
   message: "",
   video: "",
-  selectedFile: `${process.env.BASE_URL}${process.env.PORT}/uploads/facebook.png`
+  selectedFile: `${baseURL}/uploads/facebook.png`
 },
 {
   audio: "",
@@ -36,21 +38,21 @@ let posts = [{
 },
 
 {
-  audio: `${process.env.BASE_URL}${process.env.PORT}/uploads/file_example_MP3_1MG.mp3`,
+  audio: `${baseURL}/uploads/file_example_MP3_1MG.mp3`,
   message: "Understand the world we live in...",
   video: "",
-  selectedFile: `${process.env.BASE_URL}${process.env.PORT}/uploads/201122966_196781655667275_2063464168561422128_n.jpg`
+  selectedFile: `${baseURL}/uploads/201122966_196781655667275_2063464168561422128_n.jpg`
 },
 {
   audio: "",
   message: "Old-school signature.",
   video: "",
-  selectedFile: `${process.env.BASE_URL}${process.env.PORT}/uploads/NEW SIGN.PNG`
+  selectedFile: `${baseURL}/uploads/NEW SIGN.PNG`
 },
 {
   audio: "",
   message: "",
-  video: `${process.env.BASE_URL}${process.env.PORT}/uploads/file_example_MP4_1280_10MG.mp4`,
+  video: `${baseURL}/uploads/file_example_MP4_1280_10MG.mp4`,
   selectedFile: ''
 },
 // file_example_MP4_1280_10MG
