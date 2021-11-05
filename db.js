@@ -41,13 +41,13 @@ let posts = [{
   audio: `${baseURL}/uploads/file_example_MP3_1MG.mp3`,
   message: "Understand the world we live in...",
   video: "",
-  selectedFile: `${baseURL}/uploads/201122966_196781655667275_2063464168561422128_n.jpg`
+  selectedFile: `${baseURL}/uploads/superman.jpg`
 },
 {
   audio: "",
   message: "Old-school signature.",
   video: "",
-  selectedFile: `${baseURL}/uploads/NEW SIGN.PNG`
+  selectedFile: `${baseURL}/uploads/signature.png`
 },
 {
   audio: "",
