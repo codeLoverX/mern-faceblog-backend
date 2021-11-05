@@ -10,17 +10,20 @@ const app = express();
 app.use(express.json({ limit: '30mb', extended: true }))
 app.use(express.urlencoded({ limit: '30mb', extended: true }))
 app.use(cors());
-app.use("/",  (req, res)=>{
-    res.json({success: true})
-});
 
+app.get("/", (req, res) => {
+    res.json({ success: true })
+});
+app.get('/resetData', function (req, res, next) {
+    resetDB(), res.json({ success: true, reset: true })
+});
 app.use('/posts', postRoutes);
 app.use("/uploads", express.static("uploads"));
 
-app.use('/resetData', function(req, res, next){ resetDB(), res.json({success: true})});
+
 
 dotenv.config({ path: "./env/config.env" })
-const PORT = process.env.PORT|| 5000;
+const PORT = process.env.PORT || 5000;
 
-connectDB();  
+connectDB();
 app.listen(PORT, () => console.log(`Server Running on Port:${PORT}`))
