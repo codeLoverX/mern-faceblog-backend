@@ -7,7 +7,7 @@ const router = express.Router();
 
 export const getPosts = async (req, res) => {
     try {
-        const postMessages = await PostMessage.find();
+        const postMessages = await PostMessage.find().sort({created_at: -1});
 
         res.status(200).json(postMessages);
     } catch (error) {
