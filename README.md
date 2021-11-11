@@ -1,48 +1,23 @@
-![brand](https://user-images.githubusercontent.com/52366079/140796526-df4060f5-9048-4154-bbec-6a35b440cfe2.PNG)
+![createPost](https://user-images.githubusercontent.com/52366079/141219084-624f5729-c49f-4cca-8430-73080de10d4c.PNG)
 
-![individual](https://user-images.githubusercontent.com/52366079/140796598-a498f9c5-27b1-48e4-86ed-eccc0f32d491.PNG)
+![editPost](https://user-images.githubusercontent.com/52366079/141219093-fb101bd2-2ea1-4c7b-94d5-b4b17c7e9f2b.PNG)
 
-![ecommerce-first-view](https://user-images.githubusercontent.com/52366079/140796628-fc959bbe-24f6-46b2-9812-09067ed155a3.PNG)!
+![faceblog-first-view](https://user-images.githubusercontent.com/52366079/141219105-607e6f91-d8c5-4693-b541-3af9317dab5e.PNG)
 
-[cart](https://user-images.githubusercontent.com/52366079/140796633-819ca5b0-91b2-47c9-b6cb-29c86c6a5b6e.PNG)
+![text-image-audio](https://user-images.githubusercontent.com/52366079/141219117-2dfc94a7-297f-4f45-8300-2fd198eee640.PNG)
 
-![jerseys-page-scrolldown](https://user-images.githubusercontent.com/52366079/140796665-f6c804d4-19ab-4549-b1da-9a31c7040e6b.PNG)
+![text-post](https://user-images.githubusercontent.com/52366079/141219123-7ed2289d-b4b5-4378-b6db-db54b11e6232.PNG)
 
-![purchases](https://user-images.githubusercontent.com/52366079/140796684-be138722-b990-4eed-b14b-db65f3f8ba42.PNG)
-
-![profile](https://user-images.githubusercontent.com/52366079/140796694-1023c897-a725-46c7-a262-7462a2741ecd.PNG)
+![video-post](https://user-images.githubusercontent.com/52366079/141219129-9e9917b0-9f2f-438c-8d82-31f652c209e1.PNG)
 
 
+A very basic clone of Facebook- named Faceblog. https://faceblogv1.netlify.app/
+If free server is down, please go to https://funprojects.netlify.app/ and click "faceblog" to wake it up.
 
-[Warning: Heroku free tier deployment sleeps every 30 minutes so need to "wake up" database]
-
-
-Making an ecommerce store is one of the most common websites that professional developers have to make. This is my own creation of a full-stack project using the Mern stack:
-
-
-
-Frontend: https://funprojects.netlify.app/
-
-Backend: https://football-mern-shop.herokuapp.com/
-
-
-
-Login: Rossie_Kilback48@hotmail.com
-
-Password: 123456
-
-
-
-Feautures: Cart, Login, View Product, Profile, Payment
-
-Tech stack: React, Redux, Node.js (Express Framework), MongoDB, Mongoose ODM, MDBReact
-
+Feautures: Upload, delete and edit posts (audio, video, image and text)
+Tech stack: React, Redux, Node.js (Express Framework), MongoDB, Mongoose ODM, MaterialUI
 Hosted at: Heroku, Netlify, Github
 
-
-
-Free hosting suffers from frequent lags. Interested in taking a closer look at the website because of the free hosting problems? Please feel free to inbox me on LinkedIn. You can also contact me on WhatsApp
-
-
-
 #reactjs #mernstack #nodejsdeveloper #nodejsdevelopers #mernstackdeveloper #mongodb #reduxjs #reactjsdevelopment
+
+
